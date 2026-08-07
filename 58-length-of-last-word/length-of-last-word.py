@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        s=s.split()
+        s=s.strip().split()
         last_index= len(s)-1
         return len(s[last_index])
         
