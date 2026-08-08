@@ -1,9 +1,11 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        for i in range(len(nums)):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
+        n=len(nums)
+        for i in range(n-1):
+            for j in range(i+1,n):
+                if nums[i]+ nums[j]==target:
+                    return [i,j]
+        return []
         """
         :type nums: List[int]
         :type target: int
